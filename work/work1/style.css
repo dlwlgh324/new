@@ -1,0 +1,348 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Oswald:wght@700&display=swap');
+
+
+/* 상단영역 */
+.header {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    width: 100%;
+    height: 7.5rem;
+    z-index: 999;
+    transition: all 0.2s;
+}
+
+.header-active {
+    background-color: rgb(255, 255, 255, 0.9);
+    box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.2)
+}
+
+.header-active .logo {
+    position: relative;
+    font-size: 0;
+    width: 15rem;
+    height: 5.5rem;
+    background: url('../images/logo2.png') no-repeat;
+}
+
+.header-active .gnb a {
+    color: #333;
+}
+
+.header .container {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    position: relative;
+    font-size: 0;
+    width: 15rem;
+    height: 5.5rem;
+    background: url('../images/logo.png') no-repeat;
+}
+
+.gnb {
+    width: 70rem;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gnb>li>a {
+    position: relative;
+    font-size: 1.6rem;
+    font-weight: 300;
+    letter-spacing: 0;
+    transition: 0.3s;
+}
+
+.gnb>li>a:hover {
+    font-weight: bold;
+    color: rgb(133, 141, 247);
+}
+
+/* visual영역 */
+.visual {
+    position: relative;
+    width: 160rem;
+    height: 97rem;
+    background: url('../images/visual.png') no-repeat;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.visual .container {
+    position: relative;
+    display: block;
+}
+
+.visual .container img{
+    position: absolute;
+}
+
+.object1 {
+    top: 76px;
+    left: 92px;
+}
+.object2 {
+    top: 74px;
+    left: 284px;
+}
+.object3 {
+    top: 82px;
+    left: 572px;
+}
+.object4 {
+    top: 75px;
+    left: 760px;
+}
+.object5 {
+    top: 395px;
+    left: 44px;
+}
+.object6 {
+    top: 333px;
+    left: 269px;
+}
+.object7 {
+    top: 315px;
+    left: 504px;
+}
+.object8 {
+    top: 363px;
+    left: 699px;
+}
+.object9 {
+    top: 327px;
+    left: 764px;
+}
+
+/* 상단모션 */
+
+.motion_box .motion1{animation:bounce 8s ease-in-out 0s infinite both, 0s both}
+@keyframes bounce {
+  0%, 100% {
+    -webkit-transform:translate(0, 0px);
+            transform:translate(0, 0px);
+  }
+  50% {
+    -webkit-transform:translate(0, -20px);
+            transform:translate(0, -20px);
+  }
+}
+.motion_box .motion2{animation:bounce 6s ease-in-out 0s infinite both, 0s both}
+@keyframes bounce {
+  0%, 100% {
+    -webkit-transform:translate(0, 0);
+            transform:translate(0, 0);
+  }
+  50% {
+    -webkit-transform:translate(0, -20px);
+            transform:translate(0, -20px);
+  }
+}
+.motion_box .motion3{animation:bounce 4s ease-in-out 0s infinite both, 0s both}
+@keyframes bounce {
+  0%, 100% {
+    -webkit-transform:translate(0, 0);
+            transform:translate(0, 0);
+  }
+  50% {
+    -webkit-transform:translate(0, -25px);
+            transform:translate(0, -25px);
+  }
+}
+.motion_box .motion4{animation:bounce 4s ease-in-out 0s infinite both, 0s both}
+@keyframes bounce {
+  0%, 100% {
+    -webkit-transform:translate(0, 0);
+            transform:translate(0, 0);
+  }
+  50% {
+    -webkit-transform:translate(0, -30px);
+            transform:translate(0, -30px);
+  }
+}
+.motion_box .motion5{animation:bounce 8s ease-in-out 0s infinite both, 0s both}
+@keyframes bounce {
+  0%, 100% {
+    -webkit-transform:translate(0, 0);
+            transform:translate(0, 0);
+  }
+  50% {
+    -webkit-transform:translate(0, -30px);
+            transform:translate(0, -30px);
+  }
+}
+
+.visual-txt {
+    font-size: 6rem;
+    color: #fff;
+    font-weight: 200;
+    animation: up-down 0.6s infinite ease-in-out alternate;
+}
+
+.visual-txt>b {
+    font-weight: 500;
+}
+
+@keyframes up-down {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(100%);
+    }
+}
+
+
+/* reset */
+.desktop .fb__event .event__roulette__visual img{max-width:none;margin:0 -376px auto}
+.desktop .fb__event .event__detail__wrapper .detail .event_wrap img{max-width:none}
+
+/* wide common */
+.event_wrap{overflow:hidden}
+.event_wrap .evt_wide_wrap{position:relative;max-width:1920px;margin:0 auto;text-align:left}
+.event_wrap .evt_section,.event_wrap .evt_notice{position:relative;width:1168px;margin:0 auto}
+.event_wrap .evt_section img{max-width:none;margin:0 -376px auto;vertical-align:top}
+
+.event_wrap .p_evt_sec2{background:#f78da1}
+.event_wrap .p_evt_sec3{background:#7ebf41}
+.event_wrap .p_evt_sec4{background:#f2eeef}
+
+/* nav */
+.event_wrap .evt_nav_wrap{overflow:hidden;position:absolute;top:0;left:40px;right:40px;height:125px;display:flex;justify-content:space-between}
+.event_wrap .evt_nav_wrap li{position:relative;width:25%;height:100%}
+.event_wrap .evt_nav_wrap li a{display:block;width:100%;height:100%}
+
+.event_wrap .p_evt_nav .evt_section{position:absolute !important;top:0;left:50%;-webkit-transform:translate3d(-50%,0px,0px);transform:translate3d(-50%,0px,0px);z-index:50}
+.event_wrap .p_evt_nav.is_fixed .evt_section{position:fixed !important;z-index:2}
+.event_wrap .p_evt_nav{padding-top:125px;z-index:2}
+
+.event_wrap .p_evt_nav li.on:after{position:absolute;top:0;left:0;width:100%;height:100%;background:url(https://shoppulmuone.cdn.ntruss.com/MALL/planshop/202305/0502_39anniversary/img/0502/p_evt_nav_on.jpg) 0 0 no-repeat;content:''}
+.event_wrap .p_evt_nav li:nth-child(2).on:after{background-position:-272px 0}
+.event_wrap .p_evt_nav li:nth-child(3).on:after{background-position:-544px 0}
+.event_wrap .p_evt_nav li:nth-child(4).on:after{background-position:-816px 0}
+
+/* button */
+.event_wrap .btn{position:absolute;border:0;padding:0}
+.event_wrap .btn_lnk1{top:0;left:145px;right:145px;height:200px}
+.event_wrap .btn_lnk2{top:0;left:40px;right:40px;height:200px}
+.event_wrap .btn_lnk3{top:0;left:0;right:0;height:100%}
+
+/* 쿠폰리스트 */
+.event_wrap .coupon_list{position:absolute;top:277px;left:50%;transform:translateX(-50%)}
+.event_wrap .coupon_list ul{position:relative;display:flex;justify-content: center;flex-wrap:nowrap}
+.event_wrap .coupon_list li{height:100%;margin:0 10px}
+
+/* 쿠폰 */
+.event_wrap .coupon_item{position:relative;width:266px;margin:0 auto}
+.event_wrap .coupon_item_info{position:relative;height:160px;background:#fff;border-radius:6px;display:flex;flex-direction:column;padding:22px 10px 20px 22px;box-sizing:border-box}
+.event_wrap .coupon_item_info:before{position:absolute;top:0;right:0;width:86px;height:84px;background:url(https://shoppulmuone.cdn.ntruss.com/MALL/planshop/common/img/p_mark.png) 0 0 no-repeat;background-position:-86px 0;content:''}
+.event_wrap .coupon_item_info .info_type{color:#232323;font-size:22px;font-weight:700;line-height:18px;font-family:'PulmuoneLOHAS', 'NotoSans','맑은 고딕', 'malgun gothic','Apple SD Gothic Neo', 'Apple SD 산돌고딕 Neo', 'Microsoft NeoGothic', 'Droid sans', sans-serif;z-index:10}
+.event_wrap .coupon_item_info .info_discount{color:#73c40b;font-weight:900;line-height:68px;z-index:10}
+.event_wrap .coupon_item_info .info_discount em{font-size:57px;font-family:'Lato', 'NotoSans', "맑은 고딕", "malgun gothic", "Apple SD Gothic Neo", "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", sans-serif}
+.event_wrap .coupon_item_info .info_discount small{font-size: 30px;font-family: 'Lato', 'NotoSans', "맑은 고딕", "malgun gothic", "Apple SD Gothic Neo", "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", sans-serif;}
+.event_wrap .coupon_item_info .info_name{display:block;margin-top:-2px;color:#727272;font-size:17px;line-height:22px;letter-spacing:-1px}
+
+.event_wrap .coupon_item_btn{position:relative;display:inline-block;width:266px;height:52px;left:50%;transform:translateX(-50%);margin-top:12px !important;border:1px solid #ddd !important;border-radius:4px;background:#fff !important;color:#333;font-size:20px !important;font-weight:500;letter-spacing:-1px;box-sizing:border-box}
+.event_wrap .coupon_item_btn:after{position:relative;display:inline-block;width:26px;height:16px;background:url(https://shoppulmuone.cdn.ntruss.com/MALL/planshop/common/img/icon_down.svg) 0 0 no-repeat;margin-left:6px;content:''}
+
+.event_wrap .coupon_desc{text-align:center;margin-top:18px;color:#fff}
+.event_wrap .coupon_desc span{display:block;margin:0 5px}
+.event_wrap .coupon_desc span small{font-size:16px;vertical-align:text-bottom}
+
+/* product - 깜짝특가 */
+.event_wrap .special_list{position:absolute;top:282px;left:0;display:flex;flex-wrap:wrap;justify-content:center;box-sizing:border-box}
+.event_wrap .special_list li{position:relative;width:400px;margin:0 40px;vertical-align:top}
+.event_wrap .special_list a{position:relative;display:block;width:100%;height:100%}
+.event_wrap .special_list a .special_img{opacity:1;transition:all 0.4s}
+.event_wrap .special_list a:hover .special_img{opacity:0.6}
+.event_wrap .special_list .inner{position:relative}
+.event_wrap .special_list li:nth-child(-n+2){margin-bottom:70px}
+
+.event_wrap .special_img{overflow:hidden;display:flex;justify-content:center;align-items:center;overflow:hidden;width:100%;height:400px;border-radius:8px;background:#fff}
+.event_wrap .special_img img{width:100%}
+.event_wrap .btn_view{position:absolute;top:87%;left:50%;transform:translateX(-50%);font-size:16px;font-weight:300;color:#fff;padding:6px 14px;background:rgba(0,0,0,0.45);border-radius:100px}
+.event_wrap .special_info{display:block;padding:20px 0 0;box-sizing:border-box}
+.event_wrap .special_title{display:block;font-size:26px;font-weight:500;color:#133210;line-height:30px;letter-spacing:-1.8px;word-break:keep-all;text-align:center;border-top:2px solid #fff;border-bottom:1px dotted #999;padding:18px 0}
+
+.event_wrap .special_cost{display:flex;flex-wrap:wrap;justify-content:space-between;padding:0 20px 16px 20px;font-weight:500;color:#fff;border-bottom:2px solid #fff}
+.event_wrap .special_cost dt{width:55%;padding:6px 0 0;font-size:20px;letter-spacing:-1px;box-sizing:border-box}
+.event_wrap .special_cost dd{width:auto;padding:3px 0;font-size:28px;box-sizing:border-box;display:flex;align-items:center}
+.event_wrap .special_cost dd .cost{font-family:'Lato'}
+.event_wrap .special_cost dd .won{font-size:20px;padding-top:3px}
+.event_wrap .special_cost dd ins{text-decoration:none}
+.event_wrap .special_cost .original{font-size:18px;color:#999}
+.event_wrap .special_cost .original .cost{font-size:22px}
+.event_wrap .special_cost .original .won{font-size:18px}
+
+.event_wrap .special_totalcost{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;margin-top:14px;font-size:32px;font-weight:600;color:#00371a;letter-spacing:-2px}
+.event_wrap .special_totalcost dd{display:flex;align-items:center}
+.event_wrap .special_totalcost dd .cost{font-family:'Lato';font-size:40px}
+.event_wrap .special_totalcost dd .num{margin-left:8px;font-family:'Lato';font-size:40px;color:#f74d63}
+.event_wrap .special_totalcost dd .unit{font-family:'Lato';font-size:40px;color:#f74d63}
+
+.event_wrap .coupon_special_btn{position:relative;width:100%;height:80px;padding-right:50px;margin-top:30px;border:2px solid #ddd;border-radius:8px;background:#fff;color:#333;font-size:28px;font-weight:500;letter-spacing:-2px;box-sizing:border-box}
+.event_wrap .coupon_special_btn:before{position:absolute;top:36%;left:260px;width:36px;height:24px;background:url(https://shoppulmuone.cdn.ntruss.com/MALL/planshop/common/img/icon_down.svg) 0 0 no-repeat;background-size:100%;content:''}
+
+/* soldout */
+.event_wrap .special_list .dimm_soldout{display:block;position:absolute;width:100%;height:400px;border-radius:8px;background:rgba(0,0,0,.6);color:#fff;pointer-events:none;cursor:not-allowed;z-index:1;display:flex;flex-wrap:wrap;align-content:center;justify-content:center;text-align:center;font-size:42px;font-family:'Lato'}
+.event_wrap .special_list .dimm_soldout + a{cursor:not-allowed;pointer-events:none}
+.event_wrap .special_list .dimm_soldout ~ .coupon_special_btn{background:#ccc;color:#aaa;border:#ccc;cursor:not-allowed;pointer-events:none}
+
+/* product */
+.event_wrap .product_list{display:flex;flex-wrap:wrap;margin-left:40px;margin-top:-180px;box-sizing:border-box;z-index:20}
+.event_wrap .product_list li{width:250px;margin-right:29px;vertical-align:top}
+.event_wrap .product_list a{display:block;width:100%;height:100%}
+.event_wrap .product_list .inner{position:relative;font-size:0}
+
+.event_wrap .product_img{display:flex;justify-content:center;align-items:center;overflow:hidden;width:100%;height:250px;background:#fff}
+.event_wrap .product_img img{height:100%;margin:0 !important}
+.event_wrap .product_info{display:block;padding-top:20px;margin-bottom:56px;box-sizing:border-box}
+.event_wrap .product_title{overflow:hidden;display:block;font-size:20px;font-weight:400;color:#222;line-height:26px;letter-spacing:-1px;word-break:keep-all;margin-bottom:5px}
+.event_wrap .percent{display:inline-block;margin-left:8px}
+.event_wrap .percent .num{display:inline-block;font-size:24px;font-weight:600;color:#ff7828;font-family:'Lato'}
+.event_wrap .percent .unit{display:inline-block;font-size:24px;font-weight:600;color:#ff7828;font-family:'Lato'}
+.event_wrap .original{display:block;margin:15px 0 0 0}
+.event_wrap .original del{display:inline-block;font-size:18px;color:#999;letter-spacing:-.6px;font-family:'Lato'}
+.event_wrap .sale{display:inline-block;margin-top:3px}
+.event_wrap .sale ins{display:inline-block;font-size:24px;font-weight:600;color:#222;letter-spacing:-.6px;text-decoration:none;font-family:'Lato'}
+.event_wrap .sale .won{display:inline-block;font-size:18px;font-weight:500;color:#222}
+
+/* notice */
+.event_wrap .p_evt_noti{background:#03df6b url(https://shoppulmuone.cdn.ntruss.com/MALL/planshop/202305/0502_39anniversary/img/0502/p_img_noti.jpg) center top}
+.event_wrap .evt_notice{min-height:402px;padding:0 40px 0;box-sizing:border-box}
+.event_wrap .notice_title{display:block;position:relative;padding:12px 10px 16px 46px;border-top:4px solid #333;font-size:22px;font-weight:600;color:#333;line-height:30px}
+.event_wrap .notice_title:before{position:absolute;top:50%;left:20px;width:22px;height:22px;margin-top:-12px;background:url(https://shoppulmuone.cdn.ntruss.com/MALL/planshop/common/img/icon.svg) 0 0 no-repeat;content:''}
+.event_wrap .notice_list{padding:12px 20px;border-top:1px solid rgba(3,51,51,.2);border-bottom:1px solid rgba(3,51,51,.2)}
+.event_wrap .notice_list li{position:relative;padding-left:16px;font-size:16px;color:#333;line-height:30px;word-break:keep-all}
+.event_wrap .notice_list li:before{position:absolute;top:14px;left:0;width:3px;height:3px;background-color:#333;border-radius:100%;content:''}
+
+.event_wrap .noti2{background:#f78da1 url(https://shoppulmuone.cdn.ntruss.com/MALL/planshop/202305/0502_39anniversary/img/0502/p_img_noti2.jpg) center top}
+.event_wrap .noti2 .evt_notice{min-height:372px}
+.event_wrap .noti3{background:#932aff}
+.event_wrap .noti3 .notice_title{border-top:4px solid #fff;color:#fff}
+.event_wrap .noti3 .notice_title:before{background:url(https://shoppulmuone.cdn.ntruss.com/MALL/planshop/common/img/icon_white.svg) 0 0 no-repeat}
+.event_wrap .noti3 .notice_list{border-top:1px solid rgba(255,255,255,.2) !important;border-bottom:1px solid rgba(255,255,255,.2) !important}
+.event_wrap .noti3 .notice_list li{color:#fff !important}
+.event_wrap .noti3 .notice_list li:before{background-color:#fff !important}
+
+.event_wrap .roulette_desc{text-align:center;color:#fff;margin-bottom:76px}
+
+/* template */
+.desktop .fb__event .event__roulette__wrap{height:710px;overflow:hidden}
+.desktop .fb__event .event__roulette__wrap .roulette__background{position:absolute;max-width:none;left:50%;margin:0 -960px auto} /* 배경 1920 bos등록시 사용 */
+.desktop .fb__event .roulette__wrapper{overflow:initial;top:0;width:657px;height:657px;margin:20px 0 0;transform:translate(-50%,0)}
+.desktop .fb__event .roulette__action img{width:186px;height:186px;margin:0;transform:translate(-50%,-50%)}
+.desktop .fb__event .roulette__arrow{width:57px;margin-left:-28px;top:-20px}
+.desktop .detail-wrapper__bottom{padding:0}
+

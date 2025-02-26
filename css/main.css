@@ -387,7 +387,7 @@ h2 {
 
 .intro {
     position: relative;
-    background: url(/images/intro-bg.png);
+    background: url('../images/intro-bg.png');
 }
 
 .intro .container {

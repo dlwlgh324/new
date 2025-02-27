@@ -402,7 +402,7 @@ h2 {
     width: 100%;
 }
 
-.des-img span{
+.des-txt1{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -412,6 +412,19 @@ h2 {
     font-size: 3rem;
     line-height: 1.5;
 }
+
+.des-txt2{
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    text-align: left;
+    color: #fff;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    font-weight: 100;
+}
+
+.des-txt2 b {margin-right: 10px;}
 
 .des-icon{
     position: absolute;  

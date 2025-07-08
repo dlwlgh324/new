@@ -227,7 +227,7 @@ h2 {
 }
 
 .gnb {
-    width: 30rem;
+    width: 40rem;
     height: 5.5rem;
     display: flex;
     justify-content: space-between;
@@ -238,10 +238,32 @@ h2 {
     position: relative;
     font-size: 1.6rem;
     color: #fff;
-    font-weight: 100;
+    font-weight: 500;
     letter-spacing: 0;
 }
 
+.gnb:hover .sub_gnb{
+    display: block;
+}
+
+.sub_gnb{
+    display: none;
+}
+
+.gnb>li .sub_gnb>ul {
+    position: absolute;
+    top: 55px;    
+    right: 150px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.gnb>li .sub_gnb>ul>li {
+    padding: 20px;
+}
+.gnb>li .sub_gnb>ul>li>a {
+    color: #fff;
+}
 
 /* visual영역 */
 
